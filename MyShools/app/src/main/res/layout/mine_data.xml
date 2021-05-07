@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#00CCFF">
+        <ImageButton
+            android:id="@+id/btn_return_setting"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:src="@drawable/fanhui32"
+            android:background="#00CCFF"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="编辑资料"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tixing"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/LightSlateGray"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="修改组织名称或者认证资料都需要重新认证哦"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--学校-->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="学校："
+                    android:textSize="16dp"
+
+                    android:textColor="#000"
+                    android:layout_marginRight="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+
+                    android:background="@drawable/select_school_bg"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/activity_select_school_name"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:gravity="center" />
+
+                    <ImageButton
+                        android:id="@+id/activity_select_school_button"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/xiala" />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:textSize="5dp"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————"
+            />
+
+        <!--名字-->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="名字："
+                    android:textSize="16dp"
+
+                    android:textColor="#000"
+                    android:layout_marginRight="20dp"
+                    />
+                <LinearLayout  android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/o_name"
+                    android:gravity="center"
+                    android:hint="点击修改名字"
+                    />
+                    <TextView android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="0.5dp"
+                        android:background="#000"
+                        android:alpha="0.3"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:textSize="5dp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————"
+                />
+            <!--头像-->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                   android:layout_marginLeft="2dp"
+                    android:text="头像："
+                    android:textColor="#000"
+                    android:textSize="16dp"
+
+                    android:layout_marginRight="20dp"
+                    />
+                <LinearLayout  android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/head"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/o_img"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="30dp"
+                    />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:textSize="5dp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————"
+                />
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="2"
+                        android:gravity="bottom"
+                        android:textSize="16dp"
+                        android:text="组织信息(认证使用)："
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:gravity="right"
+                        android:id="@+id/o_information_upload_tip"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="14dp"
+                        android:layout_height="match_parent"
+
+
+                        android:textColor="#0d81dc"
+                        />
+                </LinearLayout>
+            <com.example.myshools.Mine.organization.publish.InsideScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/o_identity_content"
+                    android:minHeight="120dp"
+                   android:layout_margin="5dp"
+                    android:hint="所属部门及办公室联系方式，组织当前负责人及联系方式，组织办公位置，您需要输入组织的上级单位，组织负责人及联系方式（如果您不是组织负责人，需要标注您的联系方式），或者方便为您认证的其他信息，便于我们的人工审核认证"
+                    />
+            </com.example.myshools.Mine.organization.publish.InsideScrollView>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:textSize="5dp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————"
+                />
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="2"
+                        android:text="组织介绍"
+                        android:textSize="16dp"
+                        android:textColor="#000"
+                        android:gravity="bottom"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    android:hint="组织简介"
+                    android:id="@+id/o_recommend"/>
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:textSize="5dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————"
+                    />
+            </LinearLayout>
+            <com.example.myshools.Mine.organization.publish.InsideScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+            </com.example.myshools.Mine.organization.publish.InsideScrollView>
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="160dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:id="@+id/up_data"
+                android:text="开始认证"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:background="#bfbfbf"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

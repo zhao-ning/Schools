@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="330dp"
+    android:background="@drawable/pop_window"
+    android:orientation="vertical"
+    android:layout_marginTop="130dp">
+    <TextView android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="选择学校"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_margin="3dp"
+
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:id="@+id/select_school_list_view"
+        android:layout_margin="3dp"
+       />
+</LinearLayout>

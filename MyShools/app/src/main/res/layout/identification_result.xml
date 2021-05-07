@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#7adfb8">
+        <Button
+            android:id="@+id/btn_return_s"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/fanhui32" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="认证进度"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="50dp"
+           android:gravity="center"
+            android:id="@+id/ren_zh_status"
+            android:textSize="25dp"
+            android:text="进度：已认证"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textColor="@color/textColorBlue"
+            android:text="认证权限声明："/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. 未认证用户只能查看信息."
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. 认证用户可以发布信息查看信息"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. 认证用户发布信息请不要触犯法律!"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. 认证过程中的用户请耐心等待，2~3天将返回认证结果."
+            android:textSize="18dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. 待定..."
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

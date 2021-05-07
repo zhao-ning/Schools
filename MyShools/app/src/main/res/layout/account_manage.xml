@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F9F9F9">
+
+    <FrameLayout
+        android:background="#00CCFF"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="44dp">
+        <TextView
+            android:text="返回"
+            android:id="@+id/to_mine"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="账号管理"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/account_recycleview"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/circle_background"
+        android:alpha="0.7"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#1296db"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:text="添加或注册账号"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

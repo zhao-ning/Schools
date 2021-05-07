@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textSize="16dp"
+            android:id="@+id/apply_time"
+            android:gravity="center|left"
+            android:layout_height="match_parent"/>
+        <TextView android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:id="@+id/apply_status"
+            android:gravity="center|right"
+            android:textSize="16dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:background="@color/app_color_white_transparent"
+        android:alpha="0.3"
+        android:layout_height="5dp"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:background="#F5F5F5"
+            android:src="@drawable/gerenzhongxin"
+            android:id="@+id/a_o_head_img"/>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:id="@+id/a_o_name"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:paddingTop="4dp"
+                android:gravity="right"
+                android:id="@+id/a_time_day"/>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:paddingTop="4dp"
+                android:gravity="right"
+                android:id="@+id/a_time_time"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/content_main"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="30dp"
+                android:id="@+id/ac_title"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/a_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:background="@color/app_color_white_transparent"
+        android:alpha="0.3"
+        android:layout_height="15dp"/>
+
+</LinearLayout>

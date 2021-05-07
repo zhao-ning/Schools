@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--头部-->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <!--标题和管理按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="活动名称活动名称活动名称活动名称活动是阿松大数据库打卡机圣诞卡"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/activity_manage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="管理"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <!--活动发布时间和活动状态-->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:paddingTop="4dp"
+                    android:id="@+id/activity_up_day"/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                   android:layout_marginLeft="10dp"
+
+                    android:textSize="13dp"
+                    android:paddingTop="4dp"
+                    android:id="@+id/activity_up_time"/>
+
+            </LinearLayout>
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/activity_status"
+                android:textSize="14dp"
+                android:text="活动进行中..."
+                android:textColor="#2591ff"
+                />
+
+
+        </LinearLayout>
+
+        <!--活动申请信息-->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:paddingTop="4dp"
+                android:text="申请：123人"
+                android:layout_marginRight="30dp"
+                android:id="@+id/activity_apply_num"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:paddingTop="4dp"
+                android:text="正在申请：123人"
+                android:layout_marginRight="30dp"
+                android:id="@+id/activity_applying_num"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:paddingTop="4dp"
+                android:text="空余：32人"
+                android:layout_marginRight="30dp"
+                android:id="@+id/activity_free_num"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/content_main"
+        android:orientation="vertical">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"/>
+        <com.example.myshools.Activity.entity.NoScrollGridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            />
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textColor="#45c3e9"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:id="@+id/list_biao_qian"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="浏览量"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:id="@+id/num_liulan"/>
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="点击"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:id="@+id/click_num"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#b4d5f4"/>
+
+
+</LinearLayout>

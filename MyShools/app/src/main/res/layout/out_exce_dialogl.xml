@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingBottom="10dp"
+    android:background="#d1e2f6"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:gravity="center_horizontal"
+            />
+        <TextView android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:gravity="center_horizontal"
+            android:text="生成excel表格"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/excel_tip"
+        android:textColor="#092cf3"
+        android:textSize="12dp"
+        android:text=""
+        android:gravity="center_vertical"
+        />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="3dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:id="@+id/out_num"
+            android:layout_marginBottom="7dp"
+            android:text="申请同意人数:"
+            android:textSize="16dp"
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:id="@+id/excel_download_status"
+            android:layout_marginBottom="7dp"
+            android:textSize="16dp"
+            android:text="进度：未开始"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/zhuan_fa"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        >
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="文件位置："
+            android:textSize="18dp"
+            android:textColor="#000"
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:id="@+id/excel_file_position"
+            android:layout_marginBottom="7dp"
+            android:textSize="16dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <Button android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="关闭"
+                android:textColor="#fff"
+                android:background="@drawable/bg_apply"
+                android:id="@+id/excel_download_cancel"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="开始"
+                android:textColor="#fff"
+                android:background="@drawable/bg_apply"
+                android:id="@+id/excel_download_start"
+                />
+            <Button android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="分享文件"
+                android:visibility="gone"
+                android:textColor="#fff"
+                android:background="@drawable/bg_apply"
+                android:id="@+id/share_file"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="3dp"
+        android:id="@+id/question"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:textColor="#000"
+        android:background="@drawable/question_item"
+        />
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_answer"
+        android:textSize="16dp"
+        android:layout_margin="3dp"
+        android:padding="4dp"
+        android:hint="编辑答案"
+        android:background="@drawable/question_item"
+        android:maxHeight="50dp"
+        />
+
+</LinearLayout>

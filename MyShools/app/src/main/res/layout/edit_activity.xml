@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/head_title"
+        android:background="#00CCFF">
+
+        <ImageView
+            android:id="@+id/iv_add_picture_back"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/fanhui32" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="修改活动"
+            android:textColor="@color/FloralWhite"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/add_activity_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="#fff"
+            android:background="#00CCFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tixing"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/LightSlateGray"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="您只能修改活动标签及附加选项，不能修改活动主体"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--设置标签-->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <TextView android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="选择标签"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+
+            >
+            <TextView android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="第二课堂"
+               android:layout_margin="3dp"
+                android:id="@+id/out_score"
+
+              android:background="@color/no_click"
+                android:textColor="#fff"
+                android:gravity="center"
+                />
+            <TextView android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="综测"
+                android:layout_margin="3dp"
+                android:id="@+id/zo_c"
+                android:background="@color/no_click"
+                android:textColor="#fff"
+                android:gravity="center"
+                />
+            <TextView android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="比赛"
+                android:id="@+id/bi_sai"
+
+                android:layout_margin="3dp"
+
+                android:background="@color/no_click"
+                android:textColor="#fff"
+                android:gravity="center"
+                />
+            <TextView android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="其他"
+                android:id="@+id/other"
+                android:layout_margin="3dp"
+                android:background="@color/no_click"
+                android:textColor="#fff"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:text="是否设置报名人数:"/>
+
+        <Button
+            android:id="@+id/to_select"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:onClick="popMenu"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/select"/>
+        <TextView
+            android:layout_width="40dp"
+           android:gravity="center"
+            android:textSize="14dp"
+            android:text="否"
+            android:background="@drawable/is_select_people"
+            android:layout_height="25dp"
+            android:id="@+id/selectPeople"
+            />
+        <EditText android:id="@+id/people_num"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:textSize="14dp"
+            android:visibility="invisible"
+            android:hint="设置人数"
+            android:singleLine="true"
+            android:inputType="number"
+            android:background="@drawable/is_select_people"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/set_question_layout"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:text="是否设置问题:"/>
+
+        <Button
+            android:id="@+id/to_add_question"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:onClick="setQuestionPopMenu"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/select"/>
+        <TextView
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="否"
+            android:background="@drawable/is_select_people"
+            android:layout_height="25dp"
+            android:id="@+id/is_set_question"
+            />
+        <Button android:id="@+id/set_question"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:text="设置问题  》"
+            android:textColor="#fff"
+            android:visibility="invisible"
+            android:background="#00CCFF"
+            android:textSize="14dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

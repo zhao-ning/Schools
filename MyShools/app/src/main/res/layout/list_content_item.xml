@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gerenzhongxin"
+            android:id="@+id/img_header"/>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:id="@+id/name"/>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:id="@+id/lev"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:paddingTop="4dp"
+                android:gravity="right"
+                android:id="@+id/up_day"/>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:paddingTop="4dp"
+                android:gravity="right"
+                android:id="@+id/up_time"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/content_main"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="30dp"
+                android:id="@+id/ac_title"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                />
+            <TextView android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="30dp"
+                android:id="@+id/ac_status"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:textColor="#45c3e9"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"/>
+        <com.example.myshools.Activity.entity.NoScrollGridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textColor="#45c3e9"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:id="@+id/list_biao_qian"/>
+            <Button android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="申请参加"
+                android:textColor="#fff"
+                android:background="@drawable/bg_apply"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:id="@+id/a_apply"/>
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="浏览"
+                android:textSize="12dp"
+                android:textColor="#000"
+                android:alpha="0.5"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:id="@+id/num_liulan"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:background="@color/app_color_white_transparent"
+        android:alpha="0.3"
+        android:layout_height="15dp"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="结束活动" android:id="@+id/activity_end"></item>
+    <item android:title="删除活动" android:id="@+id/activity_delete"></item>
+    <!--<item android:title="修改活动" android:id="@+id/activity_edit"></item>-->
+    <item android:title="报名申请表" android:id="@+id/activity_apply_form"></item>
+</menu>

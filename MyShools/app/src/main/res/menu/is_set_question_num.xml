@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="否" android:id="@+id/is_set_question_no"></item>
+    <item android:title="是" android:id="@+id/is_set_question_ok"></item>
+</menu>

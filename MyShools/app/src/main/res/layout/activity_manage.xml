@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_title"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="进阿三顶顶顶水水水水"
+                />
+            <TextView android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_manage"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:gravity="right"
+                android:text="管理"
+                />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="20dp"
+                android:id="@+id/activity_time"
+                android:textSize="14dp"
+                android:text="2020/03/03  08:34"
+                />
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/activity_apply"
+                android:textSize="14dp"
+                android:text="申请143"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_weight="4"
+                android:layout_height="20dp"
+                android:id="@+id/activity_free"
+                android:textSize="14dp"
+                android:text="空余：17"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcdcd"
+        />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.example.myshools.Activity.entity.NoScrollGridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"/>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_content"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:text=" ask京东卡就是\n打开手机的卡上看见的啊啊\n
+            十大森林大火可是到了拉克斯基
+            \n的拉伸艰苦艰苦按实际的啦吉林省空间阿里十六扩大睡觉了卡就说了句垃圾上课了阿克苏京东卡几十块打了深刻静安寺深刻理解点卡开始就安康数据库静安寺就爱看时间卡节省空间打开萨卡加请问你看你啊急啊看哦嗷嗷哦嗷嗷纳斯达克家具厂家快走拉的阿萨是打卢克刷卡刷卡看卡试试看开始空卡刷卡刷卡 卡洛斯离开答案是罗迪克看阿萨达拉斯阿斯利康两岸三地拉丝机和护肤品佛【 哦怕【斯诺克的企鹅按萨拉姆的卡女擦离开是SKADAOUVSDN UASDK ASNK AS KA"
+            />
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="20dp"
+                android:textSize="14dp"
+                android:text="浏览 1005"
+                />
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14dp"
+                android:text="点击 200"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcdcd"
+        />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--评论区-->
+
+    </LinearLayout>
+</LinearLayout>

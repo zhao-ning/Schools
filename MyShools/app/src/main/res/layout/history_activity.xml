@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/head_title"
+        android:orientation="horizontal"
+        android:background="#00CCFF">
+
+        <TextView
+            android:id="@+id/activity_manage_back"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="返回"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+
+         />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="活动管理"
+            android:textColor="@color/FloralWhite"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            />
+
+
+    </LinearLayout>
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/history_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ListView
+            android:id="@+id/history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.scwang.smart.refresh.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</LinearLayout>
